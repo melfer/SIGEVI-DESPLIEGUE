@@ -78,17 +78,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        ###Container config
-        #'ENGINE': 'django.db.backends.postgresql',
-        #'NAME': 'db',
-        #'USER': 'user',
-        #'PASSWORD': 'password',
-        #'HOST': '10.10.10.6',
-        #'PORT': '5432',
-        
-        ### Local Config
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'verceldb',
+        'USER': 'default',
+        'PASSWORD': 'k5Q9iAJOpYvd',
+        'HOST': 'ep-holy-wind-09877610-pooler.us-east-1.postgres.vercel-storage.com',
+        'PORT': '5432'
     }
 }
 
